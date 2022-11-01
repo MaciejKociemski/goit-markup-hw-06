@@ -915,6 +915,33 @@ ul {
 
 /* hw06*/
 
-.form{wid
 
+/* background red for controll visibility*/
+
+
+.form{background-color: red;}
+
+.form {
+    width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    ;
+
+}
+
+.form-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.top-title{margin-top: 12px;}
+
+.form-field{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
