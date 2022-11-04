@@ -1000,10 +1000,11 @@ margin: 0;
 }
 
 .form-title {
+    margin-left: 25px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
+    text-align:center;
 }
 
 .top-title {
@@ -1091,20 +1092,26 @@ textarea:focus {
 
 .form-field-check {
     font-size: 14px;
-
     padding-left: 14px;
     margin-top: 25px;
     margin-bottom: 30px;
 }
 
-.icon-check {
+/* .iconcheck{visibility: hidden;} */
+
+.icon-checkmark {
     display: inline-block;
-    width: 16px;
-    height: 15px;
+    width: 19px;
+    height: 17px;
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
+    /* fill: white; */
+
 }
+
+
+
 
 .form-checkbox {
     position: absolute;
@@ -1112,19 +1119,24 @@ textarea:focus {
     height: 1px;
     margin: -1px;
     padding: 0;
-    overflow: hidden;
+    
+    /* overflow: hidden; */
     border: 0;
     clip: rect(0, 0, 0, 0);
 }
 
-.form-checkbox+.icon-check {
-    /* background-image: url(../images/icon-checkmark.svg); */
-    /* background-position: center;
+
+/*:checked css not working ??*/
+/* code from  george hint on the Slack*/
+
+.form-checkbox:checked+.icon-checkmark{
+   
+    background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--blue); */
-    /* background-origin: border-box; */
+    background-color: var(--blue);
     border-color: var(--blue);
-    color: white;
+    /* color: white; */
+    fill: white;
     cursor: pointer;
 
 
@@ -1140,8 +1152,8 @@ textarea:focus {
 
 .form-button {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     padding: 10px 56px;
     border: none;

@@ -528,15 +528,20 @@
     </div>
 <div class="form-field">
     <label class="form-label" for="tel">Telefon</label>
-    <input class="form-input" type="tel" name="tel" id="tel">
+    <input class="form-input" type="tel" 
+    
+    >
     <svg class="input-icon" width="12" height="12">
         <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
     </svg>
 </div>
+<!--placeholder="000-000-000" pattern="[0-9] {3}-[0-9]{3}-[0-9]{3}" name="tel" id="tel"-->
+
+
 
 <div class="form-field">
     <label class="form-label" for="email">Email</label>
-    <input class="form-input" type="email" name="email" id="email">
+    <input class="form-input" type="email" name="email" id="email" >
     <svg class="input-icon" width="12" height="12">
         <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
     </svg>
@@ -548,9 +553,15 @@
 </div>
 <div class="form-field-check">
 
+<!--placeholder="your@mail" id="mail" -->
+<!--code input span svg use ...from George hint on the Slack-->
+
+
     <label class="policy-label" for="policy"></a>
         <input class="form-checkbox" type="checkbox" name="policy" id="policy">
-        <span class="icon-check"></span>
+        <span class="icon-checkmark"><svg class="iconcheck" width="16" height="12">
+            <use href="./images/icons.svg#icon-checkmark"></use>
+        </svg></span>
         Oświadczam, że akceptuję <a class="policy-link" href="">Regulamin</a><a> i </a><a class="policy-link"
             href="">Politykę prywatności.</a>
     </label>
