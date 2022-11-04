@@ -33,7 +33,8 @@ body {
 }
 
 .header-portfolio {
-    width: 1600px;
+    width: 100%;
+    border-bottom: 3px solid #1b0e0e;
 }
 
 .logo {
@@ -371,7 +372,6 @@ ul {
 }
 
 .container {
-    border: 1px solid red;
     
     width: 1200px;
     margin: 0 auto;
@@ -533,6 +533,7 @@ list-style: none;
     align-items: baseline;
     justify-content: space-between;
     padding: 0 15px;
+    /* border-bottom: 1px solid red; */
 
 
 }
@@ -623,7 +624,7 @@ list-style: none;
 
 .footer-menu {
 
-    
+   border: 1px solid red;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--black);
@@ -942,7 +943,7 @@ margin: 0;
 
 
 .screen-portfolio {
-    width: 100%;
+    width: 370px;
     height: auto;
 }
 
