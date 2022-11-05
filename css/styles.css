@@ -372,7 +372,7 @@ ul {
 }
 
 .container {
-    
+
     width: 1200px;
     margin: 0 auto;
     padding-right: 15px;
@@ -380,11 +380,11 @@ ul {
 
 }
 
-.footer-flex{
-display: flex;
-margin: 0;
-padding: 0;
-list-style: none;
+.footer-flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 
@@ -624,7 +624,7 @@ list-style: none;
 
 .footer-menu {
 
-  
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--black);
@@ -640,7 +640,7 @@ list-style: none;
 }
 
 .social-footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 80px;
     width: 206px;
     /* display: block; */
@@ -672,13 +672,32 @@ list-style: none;
     gap: 10px; */
 }
 
-.socialfooter-item{width: 44px;
-height: 44px;}
+.socialfooter-item {
+    width: 44px;
+    height: 44px;
+}
 
+.footer-submit-input {
+    width: 308px;
+    margin: 0;
+    padding: 13px 12px;
+    border: 0px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.footer-submit{margin-left: 93px;}
+.footer-submit-input:hover,
+.footer-submit-input:focus {
+    border-color: var(--blue);
+    
+}
 
-.footer-submit-text{
+.footer-submit {
+    margin-left: 93px;
+}
+
+.footer-submit-text {
     padding: 20px 0px 10px 0px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -688,27 +707,28 @@ height: 44px;}
     color: var(--white);
 }
 
-.footer-submit-button{display: inline-flex;
-align-items: center;
-justify-content: center;
-border: none;
-margin: 0;
-    padding: 8px 29px;
+.footer-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0;
+    padding: 8px 20px;
     border-radius: 4px;
     background-color: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--white);
 
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-    
-        cursor: pointer;
-        min-height: 43px;
-        margin-left: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    min-height: 43px;
+    margin-left: 12px;
 
 }
 
@@ -717,9 +737,10 @@ margin: 0;
     display: inline-block;
     width: 24px;
     height: 20px;
-    margin-left: 10px;}
+    margin-left: 10px;
+}
 
-    /* tu dodac ikone send.svg  smolocik */
+/* tu dodac ikone send.svg  smolocik */
 
 .socialfooter-svg-icon {
     display: inline-flex;
@@ -795,7 +816,7 @@ margin: 0;
 
 .client-box:hover,
 .client-box:focus {
-    --color2:#2196f3;
+    --color2: #2196f3;
     border-color: var(--main-link-color);
     border-radius: 4px;
     background-color: var(--main-bacground-color);
@@ -976,7 +997,7 @@ margin: 0;
     position: absolute;
     padding: 25px 45px 20px 24px;
     transform: translateY(0%);
-    
+
 
 }
 
@@ -1005,7 +1026,7 @@ margin: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    text-align:center;
+    text-align: center;
 }
 
 .top-title {
@@ -1074,11 +1095,11 @@ textarea {
     letter-spacing: 0.01em;
     height: 120px;
     transition-duration: 250ms;
-    transition:cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
- /*border color var(--blue)*/
+/*border color var(--blue)*/
 
 textarea:hover,
 textarea:focus {
@@ -1123,7 +1144,7 @@ textarea:focus {
     height: 1px;
     margin: -1px;
     padding: 0;
-    
+
     /* overflow: hidden; */
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -1133,8 +1154,8 @@ textarea:focus {
 /*:checked css not working ??*/
 /* code from  george hint on the Slack*/
 
-.form-checkbox:checked+.icon-checkmark{
-   
+.form-checkbox:checked+.icon-checkmark {
+
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--blue);
@@ -1179,4 +1200,13 @@ textarea:focus {
 .form-button:hover,
 .form-button:focus {
     background-color: var(--form-color)
+}
+
+/*icon send*/
+.icon-send-footer {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 30px;
 }
