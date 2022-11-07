@@ -678,11 +678,12 @@ ul {
 }
 
 .footer-submit-input {
-    
+    background-color:var(--main-bacground-color);
     width: 308px;
     margin: 0;
     padding: 13px 12px;
-    border: 0px solid rgba(33, 33, 33, 0.2);
+    border-color:  rgba(255, 255, 255, 0.3);
+ 
     border-radius: 4px;
     transition-duration: 250ms;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
